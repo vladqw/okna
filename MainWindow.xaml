@@ -1,0 +1,28 @@
+﻿<Window x:Class="Okna.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Okna"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="385*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="AntiqueWhite">
+            <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10,0"><Run Text="Работа с окнами"/></TextBlock>
+        </StackPanel>
+        <Frame Grid.Row="1" Name="FrmMane" NavigationUIVisibility="Visible"/>
+        <StackPanel Grid.Row="1">
+            <Button Name="btnZagr" Content="Загрузить" Click="BtnZagr_Click"></Button>
+        </StackPanel>
+        
+
+    </Grid>
+</Window>
